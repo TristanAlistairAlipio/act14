@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web form</title>
+  <style>
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+.container{
+    width: 100%;
+    max-width: 650px;
+    background: transparent;
+    padding: 28px;
+    margin: 28px;
+    border-radius: 10px;
+   
+}
+.title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 4px 4px 4px black;
+    border-bottom: solid 1px white;
+    border-bottom: dashed;
+}
+.main-user{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.user{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+    
+    
+}
+.user label{
+    width: 95%;
+    color: rgb(255, 241, 241);
+    text-shadow: 4px 4px 4px black;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+
+}
+.user input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 3px solid black;
+    padding: 0 10px;
+
+}
+.gender-title{
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+}
+.gender{
+    margin: 15px;
+    color: white;
+}
+.gender label{
+    padding: 0 20px 0 5px;
+    color: white;
+}
+.form-submit{
+    margin-top: 40px;
+    
+}
+.form-submit input{
+    display: block;
+    width: 600px;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: gray;
+}
+
+
+
+@media(max-width:720px){
+
+    .container{
+        width: 99%;
+        height: 100%;
+
+    }
+
+    .title{
+    font-size: 7vw;
+       width: 100%;
+        
+    }
+    .main-user{
+        display: flex;
+        flex-direction: column;
+        width: 190%;
+        height: 10%;
+    }
+    .user{
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .user label{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .user input{
+        display: flex;
+        flex-direction: column;
+        
+    
+    }
+
+    .gender{
+        display: flex;
+        flex-direction: column;
+        height: 10%;
+        width: 80%;
+        
+    }
+
+    .form-submit input{ 
+        display: block;
+        width: 100%;
+        font-size: 4vw;
+        padding: 5%;
+        border: none;
+        border-radius: 6%;
+        color:white;
+        background-color: gray;
+    }
+
+    @media(min-width:368px){
+
+.container{
+    width: 98%;
+    height: 99%;
+
+}
+
+.title{
+font-size: 6.9vw;
+   width: 99%;
+    
+}
+.main-user{
+    display: flex;
+    flex-direction: column;
+    width: 189%;
+    height: 9%;
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.user label{
+    display: flex;
+    flex-direction: column;
+
+}
+.user input{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.gender{
+    display: flex;
+    flex-direction: column;
+    height: 9%;
+    width: 79%;
+    
+}
+
+.form-submit input{ 
+    display: block;
+    width: 99%;
+    font-size: 3.9vw;
+    padding: 4%;
+    border: none;
+    border-radius: 5%;
+    color:white;
+    background-color: gray;
+}
+}
+}
+</style>
+</head>
+<body style="background-image: url(./img/pink_landscape_by_zecop-d78mx4c.jpg)">
+  <div class="container">
+    <h1 class="title">REGISTRATION</h1>
+    <form action="#">
+      <div class="main-user">
+        <div class="user">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Enter your name">
+
+        </div>
+        <div class="user">
+          <label for="username">Userame:</label>
+          <input type="text" id="username" name="username" placeholder="Enter your username">
+        </div>
+
+        <div class="user">
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" placeholder="Enter your email">
+        </div>
+
+        <div class="user">
+          <label for="phone number">Phone Number:</label>
+          <input type="text" id="phone number" name="phone number" placeholder="Enter your number">
+        </div>
+
+        <div class="user">
+          <p></p><label for="mypass">Password:</label>
+          <input type="password" name="enter password" id="enter password" placeholder="Enter your password">
+        </div>
+
+        <div class="user">
+          <p></p><label for="confirm password">Confirm Password:</label>
+          <input type="password" name="confirm password" id="confirm password" placeholder="Confirm your password">
+        </div>
+        
+        
+
+
+      </div>
+      <div class="gender-details-box">
+        <span class="gender-title">Gender</span>
+        <div class="gender">
+          <input type="radio" name="gender" id="male">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female">
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="prefer not to say">
+          <label for="prefer not to say">Prefer not to say</label>
+        </div>
+      </div>
+      <div class="form-submit">
+        <input type="submit" value="Register">
+
+
+      </div>
+
+    </form>
+  </div>
+</body>
+</html>
